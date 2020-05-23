@@ -1,0 +1,9 @@
+project/node_modules
+Server/node_modules
+report/.DS_Store
+Server/.DS_Store
+project/.DS_Store
+.DS_Store
+.idea
+.vscode
+.git

@@ -1,0 +1,119 @@
+\documentclass{article}
+\usepackage{graphicx}
+%pages setting
+\usepackage{geometry}
+\geometry{a4paper, centering, scale = 0.8}
+
+\title{COMSM0104-Web Technologies Report}
+\author{Kehan Du, Shunyi Zhao}
+
+\begin{document}
+
+\maketitle
+
+\section{Introduction}
+Our team is comprised of Kehan Du (mz19460) and Shunyi Zhao (vt19049). The
+aim of our project is to construct the PC end official website of Deep KW
+Innovation Factory.
+
+~\\
+\noindent
+Deep KW Innovation Factory is the academic workshop of interdisciplinary 
+at Huazhong University of Science and Technology, China. Since the establishment 
+of Deep KW Innovation Factory in 2017, it has always upheld and practiced 
+the concepts and methods of interdisciplinary, and insisted on exploring 
+the question of social sciences by using natural science methods.
+
+~\\
+\noindent
+The central goal of this version is to construct of the official website 
+framework and the dynamic realization of key pages and complete the initial 
+launch of the official website. This version is just used to practice the skills
+of web technologies, and will not be used commercially. We have got the
+permission to do this website, and the final report will declare the copyright.
+
+\section{Page Design}
+The home page of this project is shown below:
+\\
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=4cm]{img/02.png}
+    \includegraphics[height=4cm]{img/05.jpg}
+    \caption{home page and about page}
+    \label{fig: figure1}
+\end{figure}
+\\
+\section{Technology Evaluation}
+\subsection{Estimation of marks}
+\begin{itemize}
+    \item A for HTML
+    \item A for CSS
+    \item A for JS
+    \item B for PNG
+    \item B for SVG
+    \item B for Server
+    \item B for Database
+    \item B for dynamic pages
+    \item 12 for Depth (out of 20)
+\end{itemize} 
+
+\subsection{Client Side}
+We chose a popular javascript framework, Vue.js (version 2.6.11), to 
+develop these pages.
+Modularity and componentization are important features of Vue,  
+allowing us to build complex applications with small, independent, 
+and usually reusable components. And these components convenient 
+for later maintenance and upgrade of the official website. 
+We use webpack and npm manage the packages based on node.js, and 
+information about these packages is shown in package.json. Works are 
+placed in folder named \textit{./src/components}. HTML, used as 
+the template of every module, and CSS would control the layout 
+and style of these modules.
+
+~\\
+\noindent
+Adobe Photoshop and Illustrator (Authorized) are used to design the 
+blueprint of the website, and some .png file are created by them. 
+Some icons, such as the logo of group, are drawn by SVG.
+
+\subsubsection{HTML}
+\subsubsection{CSS}
+\subsubsection{JavaScript}
+\subsubsection{PNG}
+Some images used in this project are drawn with GIMP 2. One of the examples,
+textit{table.png} which is ued in \textit{Contact.vue}, is shown below in 
+Figure \ref{fig: figure2}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics{img/sectionPNG/table2.png}
+    \includegraphics{img/sectionPNG/table1.png}
+    \caption{Left: the image after adding three text objects. 
+    Right: add three rectangles with 48.0 opaqueness.}
+    \label{fig: figure2}
+\end{figure}
+
+\noindent
+Firstly, we added three text objects into a $ 300 \times 400 $ file, and then 
+typed in some useful information. Then the coverages of these text objects are
+combined to fix the positions of them. The result of this stage is shown in the 
+left image of Figure \ref{fig: figure2}. And then, three rectangular layers are 
+added, the result is shown in the right image of Figure \ref{fig: figure2}. 
+
+
+
+\subsubsection{SVG}
+
+\subsection{Sever Side}
+\subsubsection{Server}
+The development of Sever is also in node.js. We use \textit{express} as the 
+server framework.
+\subsubsection{Database}
+We choose \textit{sqlite3} to manage our databases. 
+We use four tables, including candidata, , in this project.
+The ER relationship of 
+tables used in this project is shown below. 
+
+\subsubsection{Dynamic Page}
+    
+\end{document}
