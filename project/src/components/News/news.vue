@@ -83,7 +83,7 @@ export default {
                     "src": "./assets/img/News/1.png",
                     "href": "https://www.baidu.com",
                     "info": "Some description"
-                }
+                } 
             ],
             group: 1,
             newSet:{
@@ -94,10 +94,9 @@ export default {
     },
     methods:{
         getData() {
-            axios.get('./static/json/news.json?group=' + this.group) 
-            .then(res => {
-            this.imgsArr = this.imgsArr.concat(res.data)
-            this.group++
+            axios.get('./static/json/news.json?group=' + this.group) .then(res => {
+                this.imgsArr = this.imgsArr.concat(res.data)
+                this.group++
             })
         }
     },

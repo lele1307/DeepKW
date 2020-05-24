@@ -3,7 +3,7 @@
         <div class="top-section">
             <BaseNav :list="subList"></BaseNav>
             <div class="main">
-                <Groups></Groups>
+                <router-view></router-view>
             </div>
         </div>
         <Basefooter class="fixed-bottom"></Basefooter>
@@ -21,7 +21,10 @@ export default {
     },
     data:function(){
         return{
-            subList: ["Groups","Members", "Graduate"],
+            subList: [
+                {router:"/about/groups",name:"Groups"},
+                {router:"/about/members",name:"Members"},
+            ],
         }
     }
 }

@@ -7,8 +7,8 @@
         <li v-for="(item,index) in fatherList" :key="index" @click="getIndex($event,item.name)">
             <router-link :to="item.router">{{item.name}}</router-link>
             <ul class="nav-left-container-small" :class="item.name">
-                <li v-for="(item,i) in list">
-                    <a class="J_menuItem" href="#">{{item}}</a>
+                <li v-for="(item,i) in list" @click="getIndex($event,item.name)">
+                    <router-link :to="item.router">{{item.name}}</router-link>
                 </li>
             </ul>
         </li>
@@ -27,17 +27,20 @@ export default {
                 {router:"/home",name:"Home"},
                 {router:"/news",name:"News"},
                 {router:"/works",name:"Works"},
-                {router:"/about",name:"About"},
+                {router:"/about/groups",name:"About"},
                 {router:"/contact",name:"Contact"}
             ]
         }
     },
     methods:{
         getIndex(e,name){
-            console.log(name,e.target.nextElementSibling.style.display)
-            if(e.target.nextElementSibling.style.display=="none"||e.target.nextElementSibling.style.display==null){
+            console.log(name,e.target.nextElementSibling)
+            if(e.target.nextElementSibling==null){
+                return
+            }
+            if(e.target.nextElementSibling.style.display=="none"){
                 e.target.nextElementSibling.style.display = "block"
-            } else{
+            }else{
                 e.target.nextElementSibling.style.display = "none"
             }
         }
