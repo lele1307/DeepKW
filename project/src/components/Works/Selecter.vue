@@ -52,7 +52,8 @@ export default {
             }
             //alert(index);
             //alert(this.seenFlags[index]);
-            axios.get('/getWorks', {
+            this.getALL();
+            /*axios.get('/getWorks', {
                 params: {
                     flags: this.seenFlags
                 }
@@ -60,7 +61,18 @@ export default {
                 this.$emit('toparent', response.data);
             }).catch(function (error){
                 alert(error);
-            });
+            });*/
+        },
+        getALL: function(){
+            axios.get('/getWorks', {
+                params: {
+                    flags: this.seenFlags
+                }
+            }).then( (response) => {
+                this.$emit('toparent', response.data);
+            }).catch(function (error) {
+                alert(error);
+            })
         }
     },
     watch: {
@@ -69,6 +81,9 @@ export default {
 
             }
         }
+    },
+    created: function() {
+        this.getALL();
     }
 }
 </script>
