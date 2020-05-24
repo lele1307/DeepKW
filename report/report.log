@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.28)  23 MAY 2020 06:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.28)  25 MAY 2020 07:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/Files/GitHub/DeepKW_Web_CourseWork/report/report.tex
-(d:/Files/GitHub/DeepKW_Web_CourseWork/report/report.tex
+**d:/Files/GitHub/DeepKW_Coursework/report/report.tex
+(d:/Files/GitHub/DeepKW_Coursework/report/report.tex
 LaTeX2e <2019-10-01> patch level 3
 (d:/WorkTools/texlive/2019/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2019/10/25 v1.4k Standard LaTeX document class
@@ -63,7 +63,11 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \Gm@layouthoffset=\dimen111
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks15
-) (d:/Files/GitHub/DeepKW_Web_CourseWork/report/report.aux)
+) (d:/Files/GitHub/DeepKW_Coursework/report/report.aux
+
+LaTeX Warning: Label `' multiply defined.
+
+)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
@@ -187,35 +191,64 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 49.
  [1
 
-{d:/WorkTools/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <d:/Files/GitHub/DeepKW_Web_CourseWork/report/img/02.png> <d:/Files/GitHub/DeepKW_Web_CourseWork/report/img/05.jpg>]
-<img/sectionPNG/table2.png, id=15, 72.27pt x 96.36pt>
+{d:/WorkTools/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <d:/Files/GitHub/DeepKW_Coursework/report/img/02.png> <d:/Files/GitHub/DeepKW_Coursework/report/img/05.jpg>]
+<img/exp/html.png, id=15, 841.1425pt x 365.365pt>
+File: img/exp/html.png Graphic file (type png)
+<use img/exp/html.png>
+Package pdftex.def Info: img/exp/html.png  used on input line 106.
+(pdftex.def)             Requested size: 369.88582pt x 160.66632pt.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 112.
+ (d:/WorkTools/texlive/2019/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 112.
+ [2 <d:/Files/GitHub/DeepKW_Coursework/report/img/exp/html.png>]
+<img/exp/css.png, id=22, 1440.38126pt x 736.7525pt>
+File: img/exp/css.png Graphic file (type png)
+<use img/exp/css.png>
+Package pdftex.def Info: img/exp/css.png  used on input line 131.
+(pdftex.def)             Requested size: 284.52756pt x 145.52669pt.
+File: img/05.jpg Graphic file (type jpg)
+<use img/05.jpg>
+Package pdftex.def Info: img/05.jpg  used on input line 132.
+(pdftex.def)             Requested size: 284.52756pt x 160.08253pt.
+<img/sectionPNG/table2.png, id=23, 72.27pt x 96.36pt>
 File: img/sectionPNG/table2.png Graphic file (type png)
 <use img/sectionPNG/table2.png>
-Package pdftex.def Info: img/sectionPNG/table2.png  used on input line 89.
+Package pdftex.def Info: img/sectionPNG/table2.png  used on input line 145.
 (pdftex.def)             Requested size: 72.2698pt x 96.35974pt.
-<img/sectionPNG/table1.png, id=16, 72.27pt x 96.36pt>
+<img/sectionPNG/table1.png, id=24, 72.27pt x 96.36pt>
 File: img/sectionPNG/table1.png Graphic file (type png)
 <use img/sectionPNG/table1.png>
-Package pdftex.def Info: img/sectionPNG/table1.png  used on input line 90.
+Package pdftex.def Info: img/sectionPNG/table1.png  used on input line 146.
 (pdftex.def)             Requested size: 72.2698pt x 96.35974pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 97.
+(Font)              <7> on input line 153.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 97.
- [2 <d:/Files/GitHub/DeepKW_Web_CourseWork/report/img/sectionPNG/table2.png> <d:/Files/GitHub/DeepKW_Web_CourseWork/report/img/sectionPNG/table1.png>] [3] (d:/Files/GitHub/DeepKW_Web_CourseWork/report/report.aux) ) 
+(Font)              <5> on input line 153.
+[3 <d:/Files/GitHub/DeepKW_Coursework/report/img/exp/css.png>] [4 <d:/Files/GitHub/DeepKW_Coursework/report/img/sectionPNG/table2.png> <d:/Files/GitHub/DeepKW_Coursework/report/img/sectionPNG/table1.png>] (d:/Files/GitHub/DeepKW_Coursework/report/report.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 2038 strings out of 492164
- 30196 string characters out of 6124347
- 102180 words of memory out of 5000000
- 6389 multiletter control sequences out of 15000+600000
+ 2070 strings out of 492164
+ 30690 string characters out of 6124347
+ 102227 words of memory out of 5000000
+ 6415 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 51i,6n,32p,341b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
-<d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on d:/Files/GitHub/DeepKW_Web_CourseWork/report/report.pdf (3 pages, 5429480 bytes).
+ 51i,6n,32p,337b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
+<d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on d:/Files/GitHub/DeepKW_Coursework/report/report.pdf (4 pages, 6722326 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 30 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 35 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
