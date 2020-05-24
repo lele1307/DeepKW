@@ -38,7 +38,7 @@ export default {
             backtext2: 'rgba(255, 255, 255, 0)',
             backtext3: 'rgba(255, 255, 255, 0)',
             backtext4: 'rgba(255, 255, 255, 0)',
-            seenFlags: [0, 0, 0, 0, 0, 0]
+            seenFlags: [0, 0, 0, 0, 0, 0],
         }
     },
     template:'#Selecter',
@@ -57,8 +57,8 @@ export default {
                 params: {
                     flags: this.seenFlags
                 }
-            }).then(function (response) {
-                //alert(response.data);
+            }).then( (response) => {
+                this.$emit('toparent', response.data);
             }).catch(function (error){
                 alert(error);
             });

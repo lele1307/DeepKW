@@ -3,11 +3,11 @@
         <div class="top-section">
             <BaseNav :list="subList"></BaseNav>
             <div class="main">
-                <Selector id="selector"></Selector>
+                <Selector id="selector" @toparent="getFromChild"></Selector>
                 <div id="work_contencts" class="d-flex flex-row justify-content-around flex-wrap">
                     <ul id="list">
                         <li v-for="item in workItems">
-                            <FloatingText :message=item.descri v-bind:title=item.title><!--""--></FloatingText>
+                            <FloatingText :message=item.content v-bind:title=item.title><!--""--></FloatingText>
                             <!--""-->
                         </li>
                     </ul>
@@ -32,9 +32,7 @@ export default {
             subList: ['Our Works', 'Other Works'],
             title2:"title2",
             title3:"title3",
-            workItems:[
-                {title: "title1", descri: "des1"}
-            ]
+            workItems:[]
         }
     },
     components: {
@@ -42,6 +40,29 @@ export default {
         Basefooter,
         Selector,
         FloatingText
+    },
+    methods: {
+        getFromChild: function (data) {
+            //alert("in works");
+            /*for(let i = 0; i < data.length; i++) {
+                alert(data[i].title);
+                alert(data[i].content);
+            }*/
+            //alert(this.workItems.length);
+            var length = this.workItems.length;
+            for(let i = 0; i < length; i++){
+                this.workItems.pop();
+            }
+            //alert(this.workItems.length);
+            for(let i = 0; i < data.length; i++) {
+                var temObject = {
+                    title: data[i].title,
+                    content: data[i].content,
+                }
+                this.workItems.push(temObject);
+            }
+            //alert(this.workItems.length);
+        }
     }
 }
 </script>

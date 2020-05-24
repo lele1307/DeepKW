@@ -4,7 +4,7 @@
             <p>{{ title }}</p>
         </div>
         <div class="descriptionDiv">
-            <span>222{{ message }}334</span>
+            <span>{{ message }}</span>
         </div>
     </div>
 </template>
