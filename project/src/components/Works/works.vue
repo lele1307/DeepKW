@@ -3,14 +3,14 @@
         <div class="top-section">
             <BaseNav :list="subList"></BaseNav>
             <div class="main">
-                <Selecter></Selecter>
+                <Selector id="selector"></Selector>
                 <div id="work_contencts" class="d-flex flex-row justify-content-around flex-wrap">
-                    <FloatingText :message="data1" :title="title1"></FloatingText>
-                    <FloatingText :message="data2"></FloatingText>
-                    <FloatingText :message="data1"></FloatingText>
-                    <FloatingText :message="data2"></FloatingText>
-                    <FloatingText :message="data1"></FloatingText>
-                    <FloatingText :message="data2"></FloatingText>
+                    <ul id="list">
+                        <li v-for="item in workItems">
+                            <FloatingText :message=item.descri v-bind:title=item.title><!--""--></FloatingText>
+                            <!--""-->
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -20,7 +20,7 @@
 <script>
 import BaseNav from '../Common/BaseNav.vue'
 import Basefooter from '../Common/Basefooter.vue'
-import Selecter from '../Works/Selecter.vue'
+import Selector from '../Works/Selecter.vue'
 import FloatingText from '../TextFrame/FloatText.vue'
 
 export default {
@@ -29,13 +29,18 @@ export default {
             title1:"title1",
             data1: "datafromother",
             data2: "datafrofather",
-            subList: ['Our Works', 'Other Works']
+            subList: ['Our Works', 'Other Works'],
+            title2:"title2",
+            title3:"title3",
+            workItems:[
+                {title: "title1", descri: "des1"}
+            ]
         }
     },
     components: {
         BaseNav,
         Basefooter,
-        Selecter,
+        Selector,
         FloatingText
     }
 }
@@ -48,5 +53,16 @@ export default {
 }
 .float {
     color: white;
+}
+#selector{
+    position:absolute;
+    top: 30px;
+    left: 500px;
+}
+
+#work_contencts {
+    position:absolute;
+    top: 300px;
+    left: 500px;
 }
 </style>
