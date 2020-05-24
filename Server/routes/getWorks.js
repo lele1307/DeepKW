@@ -6,12 +6,6 @@ var sql = require('sqlite3');
 var db = new sql.Database("serverData.db");
 var result;
 
-var paper = "paper";
-var patent = "patent";
-var AI = "artificial";
-var DS = "data";
-var MM = "math";
-var ROBOT = "robo";
 var baseQuery = "select * from work";
 var WHERE = " where";
 var whereFlag = false;
@@ -51,13 +45,22 @@ router.get('/', function (req, res, next) {
         newQuery += " subject = 'robo'"
     };
     console.log(newQuery);
-    db.all(newQuery, function (error, rows) {
-        if(error) throw error;
-        result = rows;
-    });
-    console.log(result);
-    res.send("success!");
+    
+    getWork(newQuery, function () {
+        console.log(result);
+        res.send("success!");
+    })
 })
+
+var getWork = function (query, callback){
+    db.all(query, function (error, rows) {
+        if (error) throw error;
+        if (rows) {
+            result = rows;
+        }
+        callback();
+    });
+};
 
 var checkFlag = function(query) {
     if(whereFlag === false){
