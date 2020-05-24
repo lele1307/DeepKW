@@ -10,8 +10,8 @@
                 <!--Insert an arrow image -->
                 <img id = "arrow" src="/assets/img/Contact/arrow.svg" v-if="seenButton1">
 
-                <input id="button1" type="image" src="/assets/img/Contact/formbutton.png" v-if="seenButton1" v-on:click="reverse">button1</input>
-                <input id="button2" type="image" src="/assets/img/Contact/returnButton.png" v-if="seenButton2" v-on:click="reverse2">button2</input>
+                <input id="button1" type="image" src="/assets/img/Contact/formbutton.png" v-if="seenButton1" v-on:click="reverse"></input>
+                <input id="button2" type="image" src="/assets/img/Contact/returnButton.png" v-if="seenButton2" v-on:click="reverse2"></input>
 
                 <div id="form1" v-if="seenTable">
                     <table border="0">

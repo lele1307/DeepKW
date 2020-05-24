@@ -3,14 +3,14 @@
         <div class="top-section">
             <BaseNav :list="subList"></BaseNav>
             <div class="main">
-                <Selecter></Selecter>
+                <Selector id="selector" @toparent="getFromChild"></Selector>
                 <div id="work_contencts" class="d-flex flex-row justify-content-around flex-wrap">
-                    <FloatingText :message="data1" :title="title1"></FloatingText>
-                    <FloatingText :message="data2"></FloatingText>
-                    <FloatingText :message="data1"></FloatingText>
-                    <FloatingText :message="data2"></FloatingText>
-                    <FloatingText :message="data1"></FloatingText>
-                    <FloatingText :message="data2"></FloatingText>
+                    <ul id="list">
+                        <li v-for="item in workItems">
+                            <FloatingText :message=item.content v-bind:title=item.title><!--""--></FloatingText>
+                            <!--""-->
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -20,7 +20,7 @@
 <script>
 import BaseNav from '../Common/BaseNav.vue'
 import Basefooter from '../Common/Basefooter.vue'
-import Selecter from '../Works/Selecter.vue'
+import Selector from '../Works/Selecter.vue'
 import FloatingText from '../TextFrame/FloatText.vue'
 
 export default {
@@ -29,14 +29,40 @@ export default {
             title1:"title1",
             data1: "datafromother",
             data2: "datafrofather",
-            subList: ['Our Works', 'Other Works']
+            subList: ['Our Works', 'Other Works'],
+            title2:"title2",
+            title3:"title3",
+            workItems:[]
         }
     },
     components: {
         BaseNav,
         Basefooter,
-        Selecter,
+        Selector,
         FloatingText
+    },
+    methods: {
+        getFromChild: function (data) {
+            //alert("in works");
+            /*for(let i = 0; i < data.length; i++) {
+                alert(data[i].title);
+                alert(data[i].content);
+            }*/
+            //alert(this.workItems.length);
+            var length = this.workItems.length;
+            for(let i = 0; i < length; i++){
+                this.workItems.pop();
+            }
+            //alert(this.workItems.length);
+            for(let i = 0; i < data.length; i++) {
+                var temObject = {
+                    title: data[i].title,
+                    content: data[i].content,
+                }
+                this.workItems.push(temObject);
+            }
+            //alert(this.workItems.length);
+        }
     }
 }
 </script>
@@ -48,5 +74,16 @@ export default {
 }
 .float {
     color: white;
+}
+#selector{
+    position:absolute;
+    top: 30px;
+    left: 500px;
+}
+
+#work_contencts {
+    position:absolute;
+    top: 300px;
+    left: 500px;
 }
 </style>
