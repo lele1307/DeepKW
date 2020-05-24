@@ -34,7 +34,7 @@ export default {
     },
     methods:{
         getIndex(e,name){
-            console.log(name,e.target.nextElementSibling)
+            //console.log(name,e.target.nextElementSibling)
             if(e.target.nextElementSibling==null){
                 return
             }

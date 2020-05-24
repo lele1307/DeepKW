@@ -1,24 +1,23 @@
 <template>
-<div id="selecter">
-    <img src="assets/img/Works/selectorRect.png" alt="Selector Rect">
-    <span id="type1" style="color:white" v-bind:style="{'background-color':backtype1}">
+<div id="Selecter" class="border">
+    <div class="tagName" id="type1" style="color:white" v-bind:style="{'background-color':backtype1}">
         <span v-on:click="trans('backtype1', $event, 0)">Inventions and Patents</span>
-    </span>
-    <span id="type2" style="color:white" v-bind:style="{'background-color':backtype2}">
+    </div>
+    <div class="tagName" id="type2" style="color:white" v-bind:style="{'background-color':backtype2}">
         <span v-on:click="trans('backtype2', $event, 1)">Academic Papers</span>
-    </span>
-    <span id="text1" style="color:white" v-bind:style="{'background-color':backtext1}">
+    </div>
+    <div class="tagName" id="text1" style="color:white" v-bind:style="{'background-color':backtext1}">
         <span v-on:click="trans('backtext1', $event, 2)">Artificial Intelligence</span>
-    </span>
-    <span id="text2" style="color:white" v-bind:style="{'background-color':backtext2}">
+    </div>
+    <div class="tagName" id="text2" style="color:white" v-bind:style="{'background-color':backtext2}">
         <span v-on:click="trans('backtext2', $event, 3)">Data Science</span>
-    </span>
-    <span id="text3" style="color:white" v-bind:style="{'background-color':backtext3}">
+    </div>
+    <div class="tagName" id="text3" style="color:white" v-bind:style="{'background-color':backtext3}">
         <span v-on:click="trans('backtext3', $event, 4)">Math Models</span>
-    </span>
-    <span id="text4" style="color:white" v-bind:style="{'background-color':backtext4}">
+    </div>
+    <div class="tagName" id="text4" style="color:white" v-bind:style="{'background-color':backtext4}">
         <span v-on:click="trans('backtext4', $event, 5)">Robots</span>
-    </span>
+    </div>
 
 </div>
 </template>
@@ -75,40 +74,16 @@ export default {
 </script>
 
 <style scoped>
-#text1 {
-    position:absolute;
-    left: 100px;
-    top: 60%;
+.tagName{
+    display: inline;
+    padding: 0 0.5em;
 }
-
-#text2 {
-    position:absolute;
-    top: 60%;
-    left: 270px;
-}
-
-#text3 {
-    position:absolute;
-    top: 60%;
-    left: 390px;
-}
-
-#text4 {
-    position:absolute;
-    top:60%;
-    left: 510px;
-}
-
-#type1 {
-    position:absolute;
-    top: 40%;
-    left: 100px;
-}
-
-#type2 {
-    position:absolute;
-    top: 40%;
-    left: 300px;
+#Selecter{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 2em 3em;
+    padding:1em;
 }
 
 </style>

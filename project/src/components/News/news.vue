@@ -24,6 +24,7 @@ import BaseNav from '../Common/BaseNav.vue'
 import Basefooter from '../Common/Basefooter.vue'
 import vueWaterfallEasy from 'vue-waterfall-easy'
 import axios from 'axios'
+axios.defaults.baseURL = '/root'
 export default {
     components: {
         BaseNav,
@@ -94,7 +95,7 @@ export default {
     },
     methods:{
         getData() {
-            axios.get('./static/json/news.json?group=' + this.group) .then(res => {
+            axios.get('./getNews.json?group=' + this.group) .then(res => {
                 this.imgsArr = this.imgsArr.concat(res.data)
                 this.group++
             })
