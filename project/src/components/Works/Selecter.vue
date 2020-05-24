@@ -58,7 +58,7 @@ export default {
                     flags: this.seenFlags
                 }
             }).then(function (response) {
-                alert(response.data);
+                //alert(response.data);
             }).catch(function (error){
                 alert(error);
             });
