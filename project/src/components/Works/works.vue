@@ -5,12 +5,12 @@
             <div class="main">
                 <Selector id="selector"></Selector>
                 <div id="work_contencts" class="d-flex flex-row justify-content-around flex-wrap">
-                    <FloatingText :message="data1" :title="title1"></FloatingText>
-                    <FloatingText :message="data2" :title="title2"></FloatingText>
-                    <FloatingText :message="data1" :title="title3"></FloatingText>
-                    <FloatingText :message="data2"></FloatingText>
-                    <FloatingText :message="data1"></FloatingText>
-                    <FloatingText :message="data2"></FloatingText>
+                    <ul id="list">
+                        <li v-for="item in workItems">
+                            <FloatingText :message=item.descri v-bind:title=item.title><!--""--></FloatingText>
+                            <!--""-->
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -31,7 +31,10 @@ export default {
             data2: "datafrofather",
             subList: ['Our Works', 'Other Works'],
             title2:"title2",
-            title3:"title3"
+            title3:"title3",
+            workItems:[
+                {title: "title1", descri: "des1"}
+            ]
         }
     },
     components: {
@@ -52,8 +55,14 @@ export default {
     color: white;
 }
 #selector{
-    position:relative;
+    position:absolute;
     top: 30px;
-    left: 300px;
+    left: 500px;
+}
+
+#work_contencts {
+    position:absolute;
+    top: 300px;
+    left: 500px;
 }
 </style>

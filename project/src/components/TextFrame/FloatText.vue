@@ -2,7 +2,9 @@
     <div class="FloatingText">
         <div class="titleDiv">
             <p>{{ title }}</p>
-        <span>222{{ message }}334</span>
+        </div>
+        <div class="descriptionDiv">
+            <span>222{{ message }}334</span>
         </div>
     </div>
 </template>
@@ -26,12 +28,12 @@ export default {
     width: 33%;
 }
 .titleDiv{
-    font-size: 13px;
+    font-size: 18px;
     color: white;
 }
 
 .descriptionDiv{
-    font-size: 10px;
+    font-size: 14px;
     color: white;
 }
 
