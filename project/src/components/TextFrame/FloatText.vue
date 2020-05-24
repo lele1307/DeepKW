@@ -1,5 +1,5 @@
 <template>
-    <div class="FloatingText">
+    <div class="FloatingText border">
         <div class="titleDiv">
             <p>{{ title }}</p>
         </div>
@@ -25,13 +25,14 @@ export default {
 <style>
 .FloatingText{
     margin: 0.3rem;
-    width: 33%;
+    width: 30%;
+    height: 10em;
+    background-color: rgba(255, 255, 255,0.2);
 }
 .titleDiv{
     font-size: 18px;
     color: white;
 }
-
 .descriptionDiv{
     font-size: 14px;
     color: white;

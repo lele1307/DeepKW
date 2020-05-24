@@ -1,16 +1,11 @@
 <template>
     <div id="works">
         <div class="top-section">
-            <BaseNav :list="subList"></BaseNav>
+            <BaseNav></BaseNav>
             <div class="main">
-                <Selector id="selector" @toparent="getFromChild"></Selector>
-                <div id="work_contencts" class="d-flex flex-row justify-content-around flex-wrap">
-                    <ul id="list">
-                        <li v-for="item in workItems">
-                            <FloatingText :message=item.content v-bind:title=item.title><!--""--></FloatingText>
-                            <!--""-->
-                        </li>
-                    </ul>
+                <Selector @toparent="getFromChild"></Selector>
+                <div id="work_contencts">
+                    <FloatingText v-for="(item,index) in workItems" :key="index" :message=item.content v-bind:title=item.title></FloatingText>
                 </div>
             </div>
         </div>
@@ -29,7 +24,6 @@ export default {
             title1:"title1",
             data1: "datafromother",
             data2: "datafrofather",
-            subList: ['Our Works', 'Other Works'],
             title2:"title2",
             title3:"title3",
             workItems:[]
@@ -69,21 +63,19 @@ export default {
 <style scoped>
 #works {
     height:inherit;
-    /*test comments in CSS*/
     background-image: url(/assets/img/bg.png);
 }
-.float {
-    color: white;
+.main{
+    display: flex;
+    flex-direction: column;
 }
-#selector{
-    position:absolute;
-    top: 30px;
-    left: 500px;
-}
-
 #work_contencts {
-    position:absolute;
-    top: 300px;
-    left: 500px;
+    padding: 1em;
+    overflow:scroll;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    flex-wrap:wrap;
 }
 </style>
