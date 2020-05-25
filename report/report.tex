@@ -77,7 +77,63 @@ blueprint of the website, and some .png file are created by them.
 Some icons, such as the logo of group, are drawn by SVG.
 
 \subsubsection{HTML}
+HTML is an integral part of the Vue component demonstrated as ```<template>``` tag. 
+Vue.js uses an HTML-based template syntax that allows programmers to declaratively 
+bind the rendered DOM to the underlying Vue instance’s data. The advantage of Vue 
+is it compiles the templates into Virtual DOM render functions. Combined with the 
+reactivity system, Vue is able to intelligently figure out the minimal number of 
+components to re-render and apply the minimal amount of DOM manipulations when the 
+app state changes.
+
+~\\
+\noindent
+In our project, only one index.html document is used as the entrance, which is 
+accessed through index.js.Other pages are all broken down into components, 
+which are stitched together like building blocks.Compared with basic .html 
+document, Vue's template HTML reduces the replication of many HTML statements. 
+At the same time, the grammar in the Vue framework makes the data no longer 
+nested in HTML statements, making the project itself more flexible.
+
+~\\
+\noindent
+In this project, BaseNav.vue (project/src/components/Common/BaseNav.vue) 
+is a good example. This is a common Navigation component, which uses list 
+rendering to render the navigation name(data) into HTML, and completes 
+the task with a brief HTML statement.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=13cm]{img/exp/html.png}
+    \caption{The HTML codes written in BaseNav.vue}
+    \label{}
+\end{figure}
 \subsubsection{CSS}
+CSS is also an integral part of the Vue component demonstrated 
+as \textless style\textgreater. The advantage is that the scope of CSS can be 
+limited by adding the "scoped" attribute.
+
+~\\
+\noindent
+Vue supports a variety of CSS, Less, Sass style expression mode, 
+this project uses basic CSS for style editing. At the same time, 
+we also carried out basic beautification of some HTML parts with 
+the help of Bootstrap4. The use of Flexbox in the layout, 
+this method effectively improves the website screen adaptability.
+
+~\\
+\noindent
+Original CSS  can be reflected in groups.vue 
+(project/src/components/About/groups.vue).Finally achieving the 
+predetermined goal of the design diagram.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=10cm]{img/exp/css.png}
+    \includegraphics[width=10cm]{img/05.jpg}
+    \caption{}
+    \label{}
+\end{figure}
+
 \subsubsection{JavaScript}
 \subsubsection{PNG}
 Some images used in this project are drawn with GIMP 2. One of the examples,
@@ -115,5 +171,11 @@ The ER relationship of
 tables used in this project is shown below. 
 
 \subsubsection{Dynamic Page}
+A good example of dynamic page in our project is the \textit{Works} page.
+We use a method called getAll() in the file
+(project/src/components/Works/Selecter.vue). This method is also used in the 
+created part of Vue, which could get the data of all the works stored in databases
+when this webpage is initialized. The layout of this page is shown below in 
+Figure 
     
 \end{document}
