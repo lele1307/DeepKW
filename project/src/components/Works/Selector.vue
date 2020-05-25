@@ -81,7 +81,6 @@ export default {
     watch: {
         backtype1: function () {
             return {
-
             }
         }
     },

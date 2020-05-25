@@ -31,61 +31,11 @@ export default {
         Basefooter,
         vueWaterfallEasy
     },
+    props:{},
     data:function(){
         return{
             name : 1,
-            imgsArr: [
-                {
-                    "src": "./assets/img/News/1.png",
-                    "href": "https://www.baidu.com",
-                    "info": "Some description"
-                },
-                {
-                    "src": "./assets/img/News/1.png",
-                    "href": "https://www.baidu.com",
-                    "info": "Some description"
-                },
-                {
-                    "src": "./assets/img/News/1.png",
-                    "href": "https://www.baidu.com",
-                    "info": "Some description"
-                },
-                {
-                    "src": "./assets/img/News/2.png",
-                    "href": "https://www.baidu.com",
-                    "info": "Some description"
-                },
-                {
-                    "src": "./assets/img/News/2.png",
-                    "href": "https://www.baidu.com",
-                    "info": "Some description"
-                },
-                {
-                    "src": "./assets/img/News/1.png",
-                    "href": "https://www.baidu.com",
-                    "info": "Some description"
-                },
-                {
-                    "src": "./assets/img/News/1.png",
-                    "href": "https://www.baidu.com",
-                    "info": "Some description"
-                },
-                {
-                    "src": "./assets/img/News/1.png",
-                    "href": "https://www.baidu.com",
-                    "info": "Some description"
-                },
-                {
-                    "src": "./assets/img/News/1.png",
-                    "href": "https://www.baidu.com",
-                    "info": "Some description"
-                },
-                {
-                    "src": "./assets/img/News/1.png",
-                    "href": "https://www.baidu.com",
-                    "info": "Some description"
-                } 
-            ],
+            imgsArr: [],
             group: 1,
             newSet:{
                 position:'initial'
@@ -95,15 +45,17 @@ export default {
     },
     methods:{
         getData() {
-            axios.get('./getNews.json?group=' + this.group) .then(res => {
-                this.imgsArr = this.imgsArr.concat(res.data)
-                this.group++
+            axios.get('./getNews').then(res => {
+                this.imgsArr = res.data
+            }).catch(function (error) {
+                alert(error);
             })
         }
     },
-    /* created() {
+    created() {
         this.getData()
-    } */
+    }
+
 }
 </script>
 <style lang="css" scoped>
