@@ -9,7 +9,6 @@
                 <div class="news-content">
                     <vue-waterfall-easy :imgsArr="imgsArr" :style="newSet" :maxCols="4">
                         <div class="img-info" slot-scope="props">
-                            <p class="some-info">{{props.index+1}}</p>
                             <p class="some-info">{{props.value.info}}</p>
                         </div>
                     </vue-waterfall-easy>
@@ -31,7 +30,6 @@ export default {
         Basefooter,
         vueWaterfallEasy
     },
-    props:{},
     data:function(){
         return{
             name : 1,
@@ -61,12 +59,16 @@ export default {
 <style lang="css" scoped>
 #news{
     height: inherit;
+    background-image: url(/assets/img/bg.png);
+}
+a:hover{
+    color: blueviolet;
 }
 .title{
     height: 5%;
     font-size: x-large;
     font-weight: 500;
-    color: #000;
+    color: rgb(255, 255, 255);
     padding-left: 3rem;
 }
 .news-content{
@@ -75,5 +77,10 @@ export default {
     width: 100%;
     height: 95%;
 }
-
+p {
+    color: white;
+    text-decoration: none;
+    background-color:rgba(255,255,255,0.3);
+    border-radius:4px;
+}
 </style>

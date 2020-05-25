@@ -12,3 +12,6 @@ body {
 .main {
     width: 85%;
 }
+a:hover{
+    text-decoration: none;
+}
