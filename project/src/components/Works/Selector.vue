@@ -1,24 +1,27 @@
 <template>
 <div id="Selecter" class="border">
-    <div class="tagName" id="type1" style="color:white" v-bind:style="{'background-color':backtype1}">
+    <div class="type">
+        <div class="tagName" style="color:white" v-bind:style="{'background-color':backtype1}">
         <span v-on:click="trans('backtype1', $event, 0)">Inventions and Patents</span>
+        </div>
+        <div class="tagName" style="color:white" v-bind:style="{'background-color':backtype2}">
+            <span v-on:click="trans('backtype2', $event, 1)">Academic Papers</span>
+        </div>
     </div>
-    <div class="tagName" id="type2" style="color:white" v-bind:style="{'background-color':backtype2}">
-        <span v-on:click="trans('backtype2', $event, 1)">Academic Papers</span>
+    <div class="text">
+        <div class="tagName" style="color:white" v-bind:style="{'background-color':backtext1}">
+            <span v-on:click="trans('backtext1', $event, 2)">Artificial Intelligence</span>
+        </div>
+        <div class="tagName" style="color:white" v-bind:style="{'background-color':backtext2}">
+            <span v-on:click="trans('backtext2', $event, 3)">Data Science</span>
+        </div>
+        <div class="tagName" style="color:white" v-bind:style="{'background-color':backtext3}">
+            <span v-on:click="trans('backtext3', $event, 4)">Math Models</span>
+        </div>
+        <div class="tagName" style="color:white" v-bind:style="{'background-color':backtext4}">
+            <span v-on:click="trans('backtext4', $event, 5)">Robots</span>
+        </div>
     </div>
-    <div class="tagName" id="text1" style="color:white" v-bind:style="{'background-color':backtext1}">
-        <span v-on:click="trans('backtext1', $event, 2)">Artificial Intelligence</span>
-    </div>
-    <div class="tagName" id="text2" style="color:white" v-bind:style="{'background-color':backtext2}">
-        <span v-on:click="trans('backtext2', $event, 3)">Data Science</span>
-    </div>
-    <div class="tagName" id="text3" style="color:white" v-bind:style="{'background-color':backtext3}">
-        <span v-on:click="trans('backtext3', $event, 4)">Math Models</span>
-    </div>
-    <div class="tagName" id="text4" style="color:white" v-bind:style="{'background-color':backtext4}">
-        <span v-on:click="trans('backtext4', $event, 5)">Robots</span>
-    </div>
-
 </div>
 </template>
 
@@ -95,8 +98,7 @@ export default {
 }
 #Selecter{
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
     margin: 2em 3em;
     padding:1em;
 }

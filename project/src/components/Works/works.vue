@@ -15,7 +15,7 @@
 <script>
 import BaseNav from '../Common/BaseNav.vue'
 import Basefooter from '../Common/Basefooter.vue'
-import Selector from '../Works/Selecter.vue'
+import Selector from '../Works/Selector.vue'
 import FloatingText from '../TextFrame/FloatText.vue'
 
 export default {
