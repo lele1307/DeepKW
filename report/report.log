@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.28)  27 MAY 2020 02:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.11.28)  27 MAY 2020 03:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -64,6 +64,9 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \Gm@layoutvoffset=\dimen112
 \Gm@dimlist=\toks15
 ) (d:/Files/GitHub/DeepKW_Coursework/report/report.aux
+
+LaTeX Warning: Label `' multiply defined.
+
 
 LaTeX Warning: Label `' multiply defined.
 
@@ -187,72 +190,77 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
  [1
 
 {d:/WorkTools/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <d:/Files/GitHub/DeepKW_Coursework/report/img/02.png>]
-LaTeX Font Info:    Trying to load font information for OML+cmr on input line 79.
+LaTeX Font Info:    Trying to load font information for OML+cmr on input line 73.
  (d:/WorkTools/texlive/2019/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 79.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 73.
 <img/exp/html.png, id=14, 841.1425pt x 365.365pt>
 File: img/exp/html.png Graphic file (type png)
 <use img/exp/html.png>
-Package pdftex.def Info: img/exp/html.png  used on input line 106.
+Package pdftex.def Info: img/exp/html.png  used on input line 100.
 (pdftex.def)             Requested size: 369.88582pt x 160.66632pt.
  [2 <d:/Files/GitHub/DeepKW_Coursework/report/img/exp/html.png>]
 <img/exp/css.png, id=22, 1440.38126pt x 736.7525pt>
 File: img/exp/css.png Graphic file (type png)
 <use img/exp/css.png>
-Package pdftex.def Info: img/exp/css.png  used on input line 131.
+Package pdftex.def Info: img/exp/css.png  used on input line 125.
 (pdftex.def)             Requested size: 284.52756pt x 145.52669pt.
 <img/05.jpg, id=23, 1337.99875pt x 752.8125pt>
 File: img/05.jpg Graphic file (type jpg)
 <use img/05.jpg>
-Package pdftex.def Info: img/05.jpg  used on input line 132.
+Package pdftex.def Info: img/05.jpg  used on input line 126.
 (pdftex.def)             Requested size: 284.52756pt x 160.08253pt.
- [3 <d:/Files/GitHub/DeepKW_Coursework/report/img/exp/css.png> <d:/Files/GitHub/DeepKW_Coursework/report/img/05.jpg>]
-<img/sectionPNG/table2.png, id=28, 72.27pt x 96.36pt>
+<img/sectionPNG/table2.png, id=24, 72.27pt x 96.36pt>
 File: img/sectionPNG/table2.png Graphic file (type png)
 <use img/sectionPNG/table2.png>
-Package pdftex.def Info: img/sectionPNG/table2.png  used on input line 171.
+Package pdftex.def Info: img/sectionPNG/table2.png  used on input line 165.
 (pdftex.def)             Requested size: 72.2698pt x 96.35974pt.
-<img/sectionPNG/table1.png, id=29, 72.27pt x 96.36pt>
+<img/sectionPNG/table1.png, id=25, 72.27pt x 96.36pt>
 File: img/sectionPNG/table1.png Graphic file (type png)
 <use img/sectionPNG/table1.png>
-Package pdftex.def Info: img/sectionPNG/table1.png  used on input line 172.
+Package pdftex.def Info: img/sectionPNG/table1.png  used on input line 166.
 (pdftex.def)             Requested size: 72.2698pt x 96.35974pt.
+ [3 <d:/Files/GitHub/DeepKW_Coursework/report/img/exp/css.png> <d:/Files/GitHub/DeepKW_Coursework/report/img/05.jpg>]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 179.
+(Font)              <7> on input line 177.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 179.
-<img/sectionPNG/Works1.png, id=30, 1156.32pt x 596.82974pt>
+(Font)              <5> on input line 177.
+<img/exp/svg.png, id=30, 742.775pt x 54.2025pt>
+File: img/exp/svg.png Graphic file (type png)
+<use img/exp/svg.png>
+Package pdftex.def Info: img/exp/svg.png  used on input line 197.
+(pdftex.def)             Requested size: 284.52756pt x 20.7634pt.
+ [4 <d:/Files/GitHub/DeepKW_Coursework/report/img/sectionPNG/table2.png> <d:/Files/GitHub/DeepKW_Coursework/report/img/sectionPNG/table1.png> <d:/Files/GitHub/DeepKW_Coursework/report/img/exp/svg.png>]
+<img/sectionPNG/Works1.png, id=37, 1156.32pt x 596.82974pt>
 File: img/sectionPNG/Works1.png Graphic file (type png)
 <use img/sectionPNG/Works1.png>
-Package pdftex.def Info: img/sectionPNG/Works1.png  used on input line 234.
+Package pdftex.def Info: img/sectionPNG/Works1.png  used on input line 247.
 (pdftex.def)             Requested size: 220.49706pt x 113.81102pt.
- [4 <d:/Files/GitHub/DeepKW_Coursework/report/img/sectionPNG/table2.png> <d:/Files/GitHub/DeepKW_Coursework/report/img/sectionPNG/table1.png>]
-<img/sectionPNG/Works2.png, id=36, 1156.32pt x 596.82974pt>
+<img/sectionPNG/Works2.png, id=38, 1156.32pt x 596.82974pt>
 File: img/sectionPNG/Works2.png Graphic file (type png)
 <use img/sectionPNG/Works2.png>
-Package pdftex.def Info: img/sectionPNG/Works2.png  used on input line 249.
+Package pdftex.def Info: img/sectionPNG/Works2.png  used on input line 262.
 (pdftex.def)             Requested size: 220.49706pt x 113.81102pt.
- [5 <d:/Files/GitHub/DeepKW_Coursework/report/img/sectionPNG/Works1.png> <d:/Files/GitHub/DeepKW_Coursework/report/img/sectionPNG/Works2.png>] (d:/Files/GitHub/DeepKW_Coursework/report/report.aux)
+ [5 <d:/Files/GitHub/DeepKW_Coursework/report/img/sectionPNG/Works1.png> <d:/Files/GitHub/DeepKW_Coursework/report/img/sectionPNG/Works2.png>] [6] (d:/Files/GitHub/DeepKW_Coursework/report/report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2084 strings out of 492164
- 31026 string characters out of 6124347
- 103243 words of memory out of 5000000
- 6427 multiletter control sequences out of 15000+600000
+ 2090 strings out of 492164
+ 31127 string characters out of 6124347
+ 102243 words of memory out of 5000000
+ 6432 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  51i,6n,32p,337b,221s stack positions out of 5000i,500n,10000p,200000b,80000s
 <d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><d:/WorkTools/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on d:/Files/GitHub/DeepKW_Coursework/report/report.pdf (5 pages, 10177911 bytes).
+Output written on d:/Files/GitHub/DeepKW_Coursework/report/report.pdf (6 pages, 10189530 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 37 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 39 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 46 words of extra memory for PDF output out of 10000 (max. 10000000)
 
