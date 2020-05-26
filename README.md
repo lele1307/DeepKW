@@ -30,6 +30,25 @@
         │   bundle.js
     ```
 
+
+**Project Operation**
+The following operations will instantly start the project：
+```
+git clone https://github.com/lele1307/DeepKW.git
+
+cd Server
+
+npm install
+
+npm run start
+
+cd project
+
+npm install
+
+npm run dev
+
+```
 **HTML**
 HTML is an integral part of the Vue component demonstrated as ```<template>``` tag. Vue.js uses an HTML-based template syntax that allows programmers to declaratively bind the rendered DOM to the underlying Vue instance’s data. The advantage of Vue is it compiles the templates into Virtual DOM render functions. Combined with the reactivity system, Vue is able to intelligently figure out the minimal number of components to re-render and apply the minimal amount of DOM manipulations when the app state changes.
 
@@ -62,9 +81,14 @@ In addition, we used the Webpack packaging tool to modularize and unify a large 
 The entire Vue project does not rely on Vue CLI scaffolding, and the project configuration files are all original.
 
 **SVG**
-We tried to use Inkscape as a tool for original SVG design. The arrow shape mainly reflected in Contact page (project / src / assets / img / Contact / arrow.svg)
+We tried to use Inkscape as a tool for original SVG design.
+- The arrow shape mainly reflected in Contact page (project / src / assets / img / Contact / arrow.svg)
+- LOGO  of ```<title>``` tag is converted to ico format via svg.
+
+![logo](/report/img/exp/svg1.png)
 
 In addition to the original SVG, the project also references the font-awsome icon font library. This font library can provide scalable vector icons. Its scalability can better adapt to the page size.
+
 ![svg](/report/img/exp/svg.png)
 
 

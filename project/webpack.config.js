@@ -9,7 +9,8 @@ module.exports = {
         new webpack.HotModuleReplacementPlugin(), //new 一个热更新的 模块对象， 这是 启用热更新的第 3 步
         new htmlWebpackPlugin({ // 创建一个 在内存中 生成 HTML  页面的插件
             template: path.join(__dirname, './src/index.html'), // 指定 模板页面，将来会根据指定的页面路径，去生成内存中的 页面
-            filename: 'index.html' // 指定生成的页面的名称
+            filename: 'index.html', // 指定生成的页面的名称
+            favicon:"./icon.ico"
         }),
         new vueLoaderPlugin()
     ],
