@@ -70,11 +70,11 @@ INPUT d:/WorkTools/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT d:/WorkTools/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
 INPUT d:/WorkTools/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT d:/WorkTools/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT d:/WorkTools/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT d:/Files/GitHub/DeepKW_Coursework/report/img/02.png
 INPUT d:/Files/GitHub/DeepKW_Coursework/report/img/02.png
 OUTPUT d:/Files/GitHub/DeepKW_Coursework/report/report.pdf
 INPUT d:/Files/GitHub/DeepKW_Coursework/report/img/02.png
-INPUT d:/WorkTools/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT d:/WorkTools/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 INPUT d:/WorkTools/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 INPUT d:/WorkTools/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map
