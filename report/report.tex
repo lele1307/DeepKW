@@ -77,8 +77,8 @@ blueprint of the website, and some .png file are created by them.
 Some icons, such as the logo of group, are drawn by SVG.
 
 \subsubsection{HTML}
-HTML is an integral part of the Vue component demonstrated as \textless template\textgreater
- tag. 
+HTML is an integral part of the Vue component demonstrated as \textless template\textgreater \space
+tag. 
 Vue.js uses an HTML-based template syntax that allows programmers to declaratively 
 bind the rendered DOM to the underlying Vue instance’s data. The advantage of Vue 
 is it compiles the templates into Virtual DOM render functions. Combined with the 
@@ -136,6 +136,32 @@ predetermined goal of the design diagram.
 \end{figure}
 
 \subsubsection{JavaScript}
+The embodiment of Javascript on the client-side is the Vue.js framework. 
+From the structural point of view, index.js is used as the entrance 
+into the program, router.js is the route deployment of the subpage 
+of the website, and other specific js methods are written in 
+the \textless script\textgreater\space tag of each component.
+
+~\\
+\noindent
+There are some examples of specific JS methods:
+\begin{itemize}
+    \item The pop-up effect of the About-Group page
+    \item Hide and show the title of the navigation bar subset
+    \item News / Works pages read data from the database in the light of requirements
+\end{itemize}
+
+~\\
+\noindent
+In addition, we used the Webpack packaging tool to modularize and 
+unify a large number of CSS, JS and other dependent files. To a certain 
+extent, the page loading capacity has been optimized.
+
+~\\
+\noindent
+The entire Vue project does not rely on Vue CLI scaffolding, 
+and the project configuration files are all original.
+
 \subsubsection{PNG}
 Some images used in this project are drawn with GIMP 2. One of the examples,
 textit{table.png} which is ued in \textit{Contact.vue}, is shown below in 
@@ -164,12 +190,28 @@ added, the result is shown in the right image of Figure \ref{fig: figure2}.
 \subsection{Sever Side}
 \subsubsection{Server}
 The development of Sever is also in node.js. We use \textit{express} as the 
-server framework.
+server framework. The main works of Server is placed in the path (Server/routes),
+including three .js file. The file submit.js is used to accept the information 
+sent by the webpage Contact. This file use the function called get() to accept and 
+send the response to the webpage. With the prepared statement of sql, this file 
+could use a query to store these information into the database. Because the primary
+key of the table used in this file is not set to a auto-increment attribute, this
+file will also use a select query to count the number of rows in this table, to 
+calculate the number which should be inserted.
+
+The port number used in the sever side is set to 3000. Because some rules ban the 
+direct communication between the client side and the server side, we use a feature
+of axios to send the information. This proxy is set in the file (./project/webpack.config.js).
 \subsubsection{Database}
 We choose \textit{sqlite3} to manage our databases. 
-We use four tables, including candidata, , in this project.
-The ER relationship of 
-tables used in this project is shown below. 
+We use three tables, including candidata, news and work in this project.
+
+~\\
+\noindent
+The table candidata is used to store the data submitted by users. This table
+include 
+
+
 
 \subsubsection{Dynamic Page}
 A good example of dynamic page in our project is the \textit{Works} page.
@@ -177,6 +219,13 @@ We use a method called getAll() in the file
 (project/src/components/Works/Selecter.vue). This method is also used in the 
 created part of Vue, which could get the data of all the works stored in databases
 when this webpage is initialized. The layout of this page is shown below in 
-Figure 
+Figure .
+
+\begin{figure}[]
+    \centering
+    
+    \caption{}
+    \label{}
+\end{figure}
     
 \end{document}
