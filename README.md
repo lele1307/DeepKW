@@ -48,3 +48,19 @@ Original CSS  can be reflected in groups.vue (project/src/components/About/group
 
 ![css_final](/report/img/exp/css.png)
 ![design](/report/img/05.jpg)
+
+**JS**
+The embodiment of Javascript on the client-side is the Vue.js framework. From the structural point of view, index.js is used as the entrance into the program, router.js is the route deployment of the subpage of the website, and other specific js methods are written in the ```<script>``` tag of each component.
+
+There are some examples of specific JS methods:
+- The pop-up effect of the About-Group page
+- Hide and show the title of the navigation bar subset
+- News / Works pages read data from the database in the light of requirements
+
+In addition, we used the Webpack packaging tool to modularize and unify a large number of CSS, JS and other dependent files. To a certain extent, the page loading capacity has been optimized.
+
+The entire Vue project does not rely on Vue CLI scaffolding, and the project configuration files are all original.
+
+**SVG**
+In addition to the original SVG, the project also references the font-awsome icon font library. This font library can provide scalable vector icons. Its scalability can better adapt to the page size. After that, we plan to convert the project logo to SVG format.
+![svg](/report/img/exp/svg.png)
