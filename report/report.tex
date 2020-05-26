@@ -38,8 +38,7 @@ The home page of this project is shown below:
 \begin{figure}[h]
     \centering
     \includegraphics[height=4cm]{img/02.png}
-    \includegraphics[height=4cm]{img/05.jpg}
-    \caption{home page and about page}
+    \caption{Home page}
     \label{fig: figure1}
 \end{figure}
 \\
@@ -49,7 +48,7 @@ The home page of this project is shown below:
     \item A for HTML
     \item A for CSS
     \item A for JS
-    \item B for PNG
+    \item A for PNG
     \item B for SVG
     \item B for Server
     \item B for Database
@@ -209,23 +208,51 @@ We use three tables, including candidata, news and work in this project.
 ~\\
 \noindent
 The table candidata is used to store the data submitted by users. This table
-include 
+has six attributes, including id (primary key), name, gender, country, university
+and info. The table work has five attributes, including id, type, subject, title 
+and content.
+
+~\\
+\noindent
+All queries used by the server files is written in prepared statements. We use
+these queries to get information from database and insert a new row into it. We
+also use some callback functions to ensure the programmes get the information 
+in order.
 
 
 
 \subsubsection{Dynamic Page}
 A good example of dynamic page in our project is the \textit{Works} page.
-We use a method called getAll() in the file
+We develop a method called getAll() in the file
 (project/src/components/Works/Selecter.vue). This method is also used in the 
 created part of Vue, which could get the data of all the works stored in databases
 when this webpage is initialized. The layout of this page is shown below in 
-Figure .
+Figure ~\ref{fig: figure5}.
 
-\begin{figure}[]
+\begin{figure}[h]
     \centering
-    
-    \caption{}
-    \label{}
+    \includegraphics[height=4cm]{img/sectionPNG/Works1.png}
+    \caption{The layout of Works page when open it}
+    \label{fig: figure5}
 \end{figure}
+
+~\\
+\noindent
+Users could choose a type and a subject in the selection region in this page.
+If a user choose more than one option, only the first type and the first subject
+will be used to get information from server. If an option is chosen, the background
+of this option bacome white. The works of academic papers about data science is shown
+in Figure ~\ref{fig: figure6}
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[height=4cm]{img/sectionPNG/Works2.png}
+    \caption{Works of academic papers about data science}
+    \label{fig: figure6}
+\end{figure}
+
+~\\
+\noindent
+A scroll bar is used to show more works.
     
 \end{document}
