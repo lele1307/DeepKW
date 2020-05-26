@@ -64,3 +64,10 @@ The entire Vue project does not rely on Vue CLI scaffolding, and the project con
 **SVG**
 In addition to the original SVG, the project also references the font-awsome icon font library. This font library can provide scalable vector icons. Its scalability can better adapt to the page size. After that, we plan to convert the project logo to SVG format.
 ![svg](/report/img/exp/svg.png)
+
+
+**Deficiencies**
+The construction of the website is basically completed, including the communication between the client and the server, and the configuration of the database. However,  some styles and functions on the sub-webpage are still unfinished. For example, the About-Member page is just the basic layout, with simple JS interaction methods, but the formal style has not been completed yet and needs further improvement.
+
+**Teamwork**
+Our two-person team mainly uses Git for version control and GitHub for code merging and storage. Only in the circumstance of online communication, this tool greatly improves work efficiency. In the early stage of development, we agreed to use the Vue.js framework. In the early stage, we have been learning by ourselves and helping each other. Although the final product still has a gap to launching, the first Web development experience is still impressive for us.
