@@ -32,7 +32,7 @@
 
 
 **Project Operation**
-The following operations will instantly start the project：
+The following operations will instantly start the project:
 ```
 git clone https://github.com/lele1307/DeepKW.git
 
