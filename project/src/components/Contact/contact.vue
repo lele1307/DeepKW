@@ -51,12 +51,12 @@
                             <td colspan="2">
                             <span>Your instrests</span>
                             <br>
-                            <textarea placeholder="Your interests" rows="10" cols="61" v-model="textInput"></textarea>
+                            <textarea class="form-control" placeholder="Your interests" rows="10" cols="61" v-model="textInput"></textarea>
                             </td>
                         </tr>
                         <tr>
                             <td colspan="2">
-                                <button id="submit" v-on:click="submitTable">submit</button>
+                                <button style="float:right" id="submit" class="btn btn-primary" v-on:click="submitTable">submit</button>
                             </td>
                         </tr>
                     </table>
@@ -147,6 +147,10 @@ export default {
 </script>
 
 <style scoped>
+.main{
+    display: flex;
+    flex-direction: column;
+}
 #arrow {
     position:absolute;
     top: 25%;
@@ -157,25 +161,12 @@ export default {
 #contact {
     height: 100%;
     width: 100%;
-    background-image:url(/assets/img/Contact/contact_background_little.jpg);
-}
-
-#navigation {
-    font-size: 20pt;
-    font-weight: 700;
-    color: black;
-    background-color: white;
-    width: 20%;
-    height: 100%;
-    line-height: 150%;
+    background-image:url(/assets/img/bg.png);
 }
 
 #text1 {
-    position: absolute;
-    top: 5%;
-    left: 22%;
-    color: black;
-    font-size: 50pt;
+    color: white;
+    font-size: 25pt;
     font-weight:400;
 }
 
@@ -186,27 +177,34 @@ export default {
 }
 
 #button1 {
-    position:absolute;
+    position: fixed;
     top:50%;
     left:80%;
-
     height:200px;
 }
 
 #button2 {
-    position:absolute;
+    position:fixed;
     top:89%;
     left:95%;
-
     height:50px;
 }
 
 #form1 {
-    position:absolute;
-    top: 20%;
-    left: 30%;
     color:black;
     font-size:20pt;
     font-family:calibri;
+    background-color:rgba(255, 255, 255, 0.3);
+    overflow:scroll;
+    flex-grow: 1;
+}
+table{
+    margin: 3em auto;
+}
+textarea{
+    background-color: rgba(255,255,255,0.5);
+}
+tr{
+    margin: 1rem 0;
 }
 </style>

@@ -62,7 +62,9 @@ In addition, we used the Webpack packaging tool to modularize and unify a large 
 The entire Vue project does not rely on Vue CLI scaffolding, and the project configuration files are all original.
 
 **SVG**
-In addition to the original SVG, the project also references the font-awsome icon font library. This font library can provide scalable vector icons. Its scalability can better adapt to the page size. After that, we plan to convert the project logo to SVG format.
+We tried to use Inkscape as a tool for original SVG design. The arrow shape mainly reflected in Contact page (project / src / assets / img / Contact / arrow.svg)
+
+In addition to the original SVG, the project also references the font-awsome icon font library. This font library can provide scalable vector icons. Its scalability can better adapt to the page size.
 ![svg](/report/img/exp/svg.png)
 
 
