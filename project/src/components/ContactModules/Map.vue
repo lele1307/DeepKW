@@ -1,6 +1,6 @@
 <template>
     <div id="map">
-        <img id="imgmap" v-if="seenMap" src="/assets/img/Contact/map.jpg" alt="map image" />
+        <img id="imgmap" v-if="seenMap" src="/assets/img/Contact/map.png" alt="map image" />
     </div>
 </template>
 
