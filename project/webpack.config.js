@@ -10,7 +10,7 @@ module.exports = {
         new htmlWebpackPlugin({ 
             template: path.join(__dirname, './src/index.html'), 
             filename: 'index.html', 
-            favicon:"./icon.ico"
+            favicon:"./src/icon.ico"
         }),
         new vueLoaderPlugin()
     ],
